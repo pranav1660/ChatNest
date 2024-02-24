@@ -1,0 +1,105 @@
+html, body {
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+.video-wrapper {
+  /* Telling our absolute positioned video to 
+  be relative to this element */
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+}
+video {
+  /** Simulationg background-size: cover */
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#root {
+  height: 100vh;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.joinOuterContainer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  height: 100vh;
+  width: 100%;
+  align-items: center;
+  /* background-color: #1A1A1D; */
+}
+
+.joinInnerContainer {
+  width: 25%;
+}
+
+.joinInput {
+  border-radius: 0;
+  padding: 15px 20px;
+  width: 100%;
+}
+
+.heading {
+  color: white;
+  font-size: 3em;
+  padding-bottom: 10px;
+  border-bottom: 2px solid white;
+}
+
+.button {
+    color: #fff !important;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: #2979FF;
+    padding: 20px;
+    border-radius: 5px;
+    display: inline-block;
+    border: none;
+    width: 100%;
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
+
+@media (min-width: 280px) and (max-width: 540px) {
+  .joinOuterContainer {
+    height: 100%;
+  }
+
+  .joinInnerContainer {
+    width: 90%;
+  }
+
+
+}
+@media (min-width: 720px) and (max-width: 900px) {
+  .joinOuterContainer {
+    height: 100%;
+  }
+
+  .joinInnerContainer {
+    width: 60%;
+  }
+
+
+}
+button:focus {
+  outline: 0;
+}
+/* Video by <a href="https://pixabay.com/users/enchantedstudios-722609/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=video&amp;utm_content=13495">Simon Brough</a> from <a href="https://pixabay.com//?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=video&amp;utm_content=13495">Pixabay</a> */
